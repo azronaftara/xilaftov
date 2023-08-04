@@ -7,12 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudf
+    lare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- navbar menu -->
-    <nav x-data="{ isOpen: false }" class="relative sticky top-0 bg-gray-900">
-      <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center bg-gray-900  ">
+    <nav x-data="{ isOpen: false }" class="relative sticky top-0 bg-gray-900 z-10">
+      <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center bg-gray-900">
           <div class="flex items-center justify-between">
               <a href="#">
                   <img class="w-auto h-6 sm:h-7" src="/src/Xilaftov logo.png" alt="">
@@ -84,7 +86,7 @@
                 class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                 href="/about"
               >
-                Lihat katalog
+                Lihat koleksi
               </a>
             </div>
           </div>
@@ -96,7 +98,7 @@
         <div
           class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
         >
-          <div class="mx-auto max-w-lg text-center">
+          <div class="mx-auto max-w-lg text-center" data-aos="zoom-out-up">
             <h2 class="text-3xl font-bold sm:text-4xl">Keuntungan belanja disini</h2>
       
             <p class="mt-4 text-gray-300">
@@ -107,7 +109,7 @@
           <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <a
               class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns"
+              href="/services/digital-campaigns" data-aos="fade-up"
             >
               <img src="/src/Flash.svg" alt="" class="w-10">      
               <h2 class="mt-4 text-xl font-bold text-white">Fast Delivery</h2>
@@ -118,7 +120,7 @@
       
             <a
               class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns"
+              href="/services/digital-campaigns" data-aos="fade-up" data-aos-delay="200"
             >
               <img src="/src/Shield-Done.svg" alt="" class="w-10">      
               <h2 class="mt-4 text-xl font-bold text-white">Bergaransi</h2>
@@ -130,7 +132,7 @@
       
             <a
               class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns"
+              href="/services/digital-campaigns" data-aos="fade-up" data-aos-delay="400"
             >
               <img src="/src/Chat.svg" alt="" class="w-10">
       
@@ -149,12 +151,12 @@
       <!-- stats -->
       <section class="bg-gray-900">
         <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
-          <div class="mx-auto max-w-3xl text-center">
+          <div class="mx-auto max-w-3xl text-center" data-aos="zoom-out-up">
             <h2 class="text-3xl font-bold text-white sm:text-4xl">
               Dipercaya lebih dari 15 juta pelanggan
             </h2>
       
-            <p class="mt-4 text-gray-300 sm:text-xl">
+            <p class="mt-4 text-gray-300">
               Toko kami sudah dipercaya lebih dari 15 juta pelanggan, baik dari luar negeri maupun dalam negeri
             </p>
           </div>
@@ -162,7 +164,7 @@
           <div class="mt-8 sm:mt-12">
             <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -171,12 +173,12 @@
                 </dt>
       
                 <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                  25jt++
+                  25jt+
                 </dd>
               </div>
       
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up" data-aos-delay="200"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -184,11 +186,11 @@
                   Pelanggan
                 </dt>
       
-                <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">16jt++</dd>
+                <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">16jt+</dd>
               </div>
       
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up" data-aos-delay="400"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -196,7 +198,7 @@
                   Pelanggan Puas
                 </dt>
       
-                <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">15jt++</dd>
+                <dd class="text-4xl font-extrabold text-blue-600 md:text-5xl">15jt+</dd>
               </div>
             </dl>
           </div>
@@ -206,15 +208,18 @@
       <!-- testimoni -->
       <section class="bg-gray-900 text-white">
         <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-          <h2 class="text-center text-3xl font-bold tracking-tight sm:text-5xl">
+          <div class="mx-auto max-w-lg text-center" data-aos="zoom-out-up">
+            <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">
             Testimoni Pembeli
           </h2>
-      
+          <p class="text-center">Ulasan pelanggan tentang pelayanan kami</p>
+          </div>
+          
           <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-            <blockquote class="rounded-lg bg-gray-800 p-8">
+            <blockquote class="rounded-lg bg-gray-800 p-8" data-aos="flip-left" data-aos-duration="1000">
               <div class="flex items-center gap-4">
                 <img
-                  alt="Aldi taherman"
+                  alt="Aldi taheran"
                   src="/src/aldi taher.jpeg"
                   class="h-16 w-16 rounded-full object-cover"
                 />
@@ -282,7 +287,7 @@
               </p>
             </blockquote>
       
-            <blockquote class="rounded-lg bg-gray-800 p-8">
+            <blockquote class="rounded-lg bg-gray-800 p-8" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
               <div class="flex items-center gap-4">
                 <img
                   alt="Man"
@@ -353,7 +358,7 @@
               </p>
             </blockquote>
       
-            <blockquote class="rounded-lg bg-gray-800 p-8">
+            <blockquote class="rounded-lg bg-gray-800 p-8" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
               <div class="flex items-center gap-4">
                 <img
                   alt="Man"
@@ -518,5 +523,9 @@
         </li>
       </ul>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
