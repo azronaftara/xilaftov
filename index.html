@@ -10,10 +10,11 @@
     <script src="https://cdnjs.cloudf
     lare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- navbar menu -->
-    <nav x-data="{ isOpen: false }" class="relative sticky top-0 bg-gray-900 z-10">
+    <nav x-data="{ isOpen: false }" class="fixed top-0 bg-gray-900 z-10 w-screen">
       <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center bg-gray-900">
           <div class="flex items-center justify-between">
               <a href="#">
@@ -149,8 +150,8 @@
       </section>
 
       <!-- stats -->
-      <section class="bg-gray-900">
-        <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <section class="bg-gray-900" >
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div class="mx-auto max-w-3xl text-center" data-aos="zoom-out-up">
             <h2 class="text-3xl font-bold text-white sm:text-4xl">
               Dipercaya lebih dari 15 juta pelanggan
@@ -225,7 +226,7 @@
                 />
       
                 <div>
-                  <div class="flex justify-center gap-0.5 text-blue-500">
+                  <div class="flex justify-left gap-0.5 text-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-4 w-4"
@@ -296,7 +297,7 @@
                 />
       
                 <div>
-                  <div class="flex justify-center gap-0.5 text-blue-500">
+                  <div class="flex justify-left gap-0.5 text-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-4 w-4"
@@ -367,7 +368,7 @@
                 />
       
                 <div>
-                  <div class="flex justify-center gap-0.5 text-blue-500">
+                  <div class="flex justify-left gap-0.5 text-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-4 w-4"
