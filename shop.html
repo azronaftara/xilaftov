@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
 </head>
 <body>
 
@@ -67,7 +68,7 @@
       class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8" >
       <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
         <!-- product 1 -->
-        <div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700">
+        <div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/dell xps.jpg" alt="product image" />
     </a>
@@ -101,7 +102,7 @@
 </div>
 
 <!-- product new -->
-<div class="w-full max-w-sm  border rounded-lg bg-gray-800 border-gray-700">
+<div class="w-full max-w-sm  border rounded-lg bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/rog zepyhrus.jpg" alt="product image" />
     </a>
@@ -135,7 +136,7 @@
 </div>
 
 <!-- product new -->
-<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700">
+<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/macbook air.jpg" alt="product image" />
     </a>
@@ -169,7 +170,7 @@
 </div>
 
 <!-- product new -->
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/acer predator.jpg" alt="product image" />
     </a>
@@ -203,7 +204,7 @@
 </div>
 
 <!-- product new -->
-<div class="w-full max-w-sm border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/lenovo ideapad gaming.jpg" alt="product image" />
     </a>
@@ -237,7 +238,7 @@
 </div>
 
 <!-- product 2 -->
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 hover:scale-110 transition-all" src="/src/hp pavilion gaming 2.jpg" alt="product image" />
     </a>
@@ -271,7 +272,7 @@
 </div>
 
 <!-- product 3 -->
-<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 product">
     <a href="#">
         <img class="p-8 rounded-t-lg hover:scale-110 transition-all" src="/src/msi titan.jpeg" alt="product image" />
     </a>
@@ -310,5 +311,8 @@
   <script>
     AOS.init();
   </script>
+    <script>
+        gsap.from('.product',{duration:1, opacity:0, rotateY:180} )
+    </script>
 </body>
 </html>

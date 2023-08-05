@@ -11,6 +11,10 @@
     lare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 <body>
     <!-- navbar menu -->
@@ -64,27 +68,25 @@
         >
           <div class="mx-auto max-w-3xl text-center">
             <h1
-              class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl pb-2"
+              class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl pb-2 tagline-head"
             >
               Jual Laptop bekas <br> dan Berkualitas.
-      
-              <!-- <span class="sm:block mb-5"> Barang berkualitas. </span> -->
             </h1>
       
-            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-              Tempat belanja laptop bekas dan berkualitas, bergaransi dan fast delivery. Bisa juga bayar ditempat 
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed tagline-description">
+               
             </p>
       
             <div class="mt-8 flex flex-wrap justify-center gap-4">
               <a
-                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-                href="/get-started"
+                class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto get-cta"
+                href="link shopee"
               >
                 Belanja sekarang
               </a>
       
               <a
-                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto shop-cta"
                 href="/about"
               >
                 Lihat koleksi
@@ -524,9 +526,61 @@
         </li>
       </ul>
     </footer>
+    <!-- sweet alert -->
+    <!-- <template id="my-template">
+      <swal-title>
+        Save changes to "Untitled 1" before closing?
+      </swal-title>
+      <swal-icon type="warning" color="red"></swal-icon>
+      <swal-button type="confirm">
+        Save As
+      </swal-button>
+      <swal-button type="cancel">
+        Cancel
+      </swal-button>
+      <swal-button type="deny">
+        Close without Saving
+      </swal-button>
+      <swal-param name="allowEscapeKey" value="false" />
+      <swal-param
+        name="customClass"
+        value='{ "popup": "my-popup" }' />
+      <swal-function-param
+        name="didOpen"
+        value="popup => console.log(popup)" />
+    </template> -->
+
+
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      gsap.from('.tagline-head',{duration:1, opacity:0, y:-100} )
+      gsap.to('.tagline-description',{duration:5, text:"Tempat belanja laptop bekas dan berkualitas, bergaransi dan fast delivery. Bisa juga bayar ditempat"} )
+      gsap.from('.get-cta',{duration:0.5, opacity:0, x:-100, delay:0.8} )
+      gsap.from('.shop-cta',{duration:1, opacity:0, x:100, delay:1, ease:'bounce'} )
+      const Toast = Swal.mixin({
+  toast: true,
+  position: 'bottom-end',
+  showConfirmButton: false,
+  timer: 3500,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+
+Toast.fire({
+  icon: 'success',
+  width:'550px',
+  color:'#e5e7eb',
+  background: '#0284c7',
+  title: 'Dapatkan diskon hingga 50% spesial hari Kemerdekaan'
+})
     </script>
 </body>
 </html>
