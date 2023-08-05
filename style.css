@@ -1,4 +1,8 @@
 html, body{
     overflow-x: hidden;
 }
+head .utama{
+    background-image: url("laptop.jpg");
+    width: 100vw;
+}
 
