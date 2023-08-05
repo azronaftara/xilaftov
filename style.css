@@ -13,7 +13,7 @@ head .utama{
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgba(255,255,255,.1);
+    /* background: rgba(255,255,255,.1); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,14 +28,14 @@ head .utama{
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
+    /* background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent); */
     transition: .5s;
 }
 .header:hover::before{
     left: 100%;
 }
 .logo{
-    color: #fff;
+    /* color: #fff; */
     font-size: 25px;
     text-decoration: none;
     font-weight: 600;
@@ -100,15 +100,20 @@ head .utama{
         left: 0;
         width: 100%;
         height: 295px;
-        background: rgba(255,255,255, .1);
-        border-bottom: 2px solid rgba(255,255,255, .2);
-        backdrop-filter: blur(10px);
+        /* background: rgba(255,255,255, .1); */
+        /* border-bottom: 2px solid rgba(255,255,255, .2); */
+        /* backdrop-filter: blur(10px); */
         z-index: 99;
         display: none;
     }
     .nav-bg.active{
         display: block;
         margin-top: -40px;
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(24px);
+        opacity: .5;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+        height: 330px;
     }
     .img-logo{
         position: inherit;
