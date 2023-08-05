@@ -108,6 +108,7 @@ head .utama{
     }
     .nav-bg.active{
         display: block;
+        margin-top: -10px;
     }
     .img-logo{
         position: inherit;
