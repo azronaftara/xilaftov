@@ -72,6 +72,9 @@ html, body{
     .tag-terlaris{
         margin-bottom: 32px;
     }
+    .tag-keuntungan{
+        margin-top: 64px;
+    }
     .shop-now{
         display: none;
     }
