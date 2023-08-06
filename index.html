@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xilaftov</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js" integrity="sha512-6m6AtgVSg7JzStQBuIpqoVuGPVSAK5Sp/ti6ySu6AjRDa1pX8mIl1TwP9QmKXU+4Mhq/73SzOk6mbNvyj9MPzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.min.js" integrity="sha512-Atu8sttM7mNNMon28+GHxLdz4Xo2APm1WVHwiLW9gW4bmHpHc/E2IbXrj98SmefTmbqbUTOztKl5PDPiu0LD/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudf
-    lare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    lare.com/ajax/libs/alpinejs/2.3.0/alpine.js" integrity="sha512-nIwdJlD5/vHj23CbO2iHCXtsqzdTTx3e3uAmpTm4x2Y8xCIFyWu4cSIV8GaGe2UNVq86/1h9EgUZy7tn243qdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
@@ -64,7 +64,7 @@
   </nav> -->
 
   <!-- navbar baru -->
-  <header class="header ">
+  <header class="header text-gray-900">
     <a href="#">
       <img src="https://www.animatedimages.org/data/media/781/animated-indonesia-flag-image-0017.gif" alt="brand" class="w-8 h-8">
   </a>
@@ -72,29 +72,29 @@
 
     <i class='bx bx-menu-alt-right' id="menu-icon"></i>
 
-    <nav class="navbar ">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
+    <nav class="navbar text-gray-400">
+        <a href="index.html" class="text-gray-200">Home</a>
+        <a href="shop.html">Products</a>
         <a href="#">Contact</a>
         <a href="#">About</a>
-        <a href="#">Shopee</a>
-    </nav>
+        <a href="#"><img src="src/shopping-cart.png" alt="" class="w-7 absolute right-20 top-6 shop-now"></a>
+      </nav>
 </header>
 <div class="nav-bg bg-opacity-30 backdrop-blur-lg bg-white"></div>
 
     <!-- hero -->
-    <section class="bg-gray-900 utama text-white">
+    <section class="bg-gray-900 text-white">
         <div
           class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
         >
           <div class="mx-auto max-w-3xl text-center">
             <h1
-              class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl pb-2 tagline-head"
+              class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl pb-2 tagline-head relative z-10"
             >
               Jual Laptop bekas <br> dan Berkualitas.
             </h1>
       
-            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed tagline-description">
+            <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed tagline-description relative z-10">
                
             </p>
       
@@ -117,6 +117,57 @@
         </div>
       </section>
 
+      <!-- product terlaris -->
+      <section class="product-terlaris bg-gray-900 text-white">
+        <h2 class="text-3xl font-bold sm:text-4xl text-center sm:pt-[24px]">Product terlaris</h2>
+        <div class="container mx-auto px-3 py-2 lg:px-12 lg:pt-20 bg-gray-900">
+          <div class="-m-1 flex flex-wrap md:-m-2">
+            <div class="flex lg:w-1/2 flex-wrap sm:w-screen">
+              <div class="w-1/2 p-1 md:p-2" data-aos="fade-up-right" data-aos-delay="200">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris.jpg" />
+              </div>
+              <div class="w-1/2 p-1 md:p-2" data-aos="fade-up-right">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris2.jpg" />
+              </div>
+              <div class="w-full p-1 md:p-2" data-aos="fade-right">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris3.jpeg" />
+              </div>
+            </div>
+            <div class="flex lg:w-1/2 flex-wrap sm:w-screen">
+              <div class="w-full p-1 md:p-2 " data-aos="fade-left" data-aos-delay="300">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris3.jpg" />
+              </div>
+              <div class="w-1/2 p-1 md:p-2" data-aos="fade-up-left">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris4.jpg" />
+              </div>
+              <div class="w-1/2 p-1 md:p-2" data-aos="fade-up-left" data-aos-delay="200">
+                <img
+                  alt="gallery"
+                  class="block h-full w-full rounded-lg object-cover object-center"
+                  src="src/terlaris5.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- test 2 -->
+      </section>
+
       <!-- Feature -->
       <section class="bg-gray-900 text-white">
         <div
@@ -131,41 +182,38 @@
           </div>
       
           <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <a
-              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns" data-aos="fade-up"
+            <div
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10" data-aos="fade-up"
             >
-              <img src="/src/Flash.svg" alt="" class="w-10">      
+              <img src="/src/fast-delivery.png" alt="" class="w-14">      
               <h2 class="mt-4 text-xl font-bold text-white">Fast Delivery</h2>
               <p class="mt-1 text-sm text-gray-300">
                 Barang sampai ditempat sesuai waktunya dan bisa bayar ditempat
               </p>
-            </a>
+            </div>
       
-            <a
-              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns" data-aos="fade-up" data-aos-delay="200"
+            <div
+              class="cursor-auto block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="200"
             >
-              <img src="/src/Shield-Done.svg" alt="" class="w-10">      
+              <img src="/src/guarantee.png" alt="" class="w-14">      
               <h2 class="mt-4 text-xl font-bold text-white">Bergaransi</h2>
       
               <p class="mt-1 text-sm text-gray-300">
                 Kami akan memberikan garansi apabila barang sampai tidak sesuai keinginan
               </p>
-            </a>
+            </div>
       
-            <a
-              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-              href="/services/digital-campaigns" data-aos="fade-up" data-aos-delay="400"
+            <div
+              class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-blue-500/10 hover:shadow-blue-500/10" data-aos="fade-up" data-aos-delay="400"
             >
-              <img src="/src/Chat.svg" alt="" class="w-10">
+              <img src="/src/admin.png" alt="" class="w-14">
       
               <h2 class="mt-4 text-xl font-bold text-white">Fast Respon Admin</h2>
       
               <p class="mt-1 text-sm text-gray-300">
                 Anda juga dapat bertanya-tanya tentang barang yang ingin anda beli melalui admin
               </p>
-            </a>
+            </div>
       
             
           </div>
@@ -188,7 +236,7 @@
           <div class="mt-8 sm:mt-12">
             <dl class="grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800 hover:border-blue-600" data-aos="zoom-in-up"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -202,7 +250,7 @@
               </div>
       
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up" data-aos-delay="200"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800 hover:border-blue-600" data-aos="zoom-in-up" data-aos-delay="200"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -214,7 +262,7 @@
               </div>
       
               <div
-                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800" data-aos="zoom-in-up" data-aos-delay="400"
+                class="flex flex-col rounded-lg border px-4 py-8 text-center border-gray-800 hover:border-blue-600" data-aos="zoom-in-up" data-aos-delay="400"
               >
                 <dt
                   class="order-last text-lg font-medium text-gray-400"
@@ -236,12 +284,12 @@
             <h2 class="text-center text-3xl font-bold tracking-tight sm:text-4xl">
             Testimoni Pembeli
           </h2>
-          <p class="text-center">Ulasan pelanggan tentang pelayanan kami</p>
+          <p class="text-center text-gray-300">Ulasan pelanggan tentang pelayanan kami</p>
           </div>
           
           <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
             <blockquote class="rounded-lg bg-gray-800 p-8" data-aos="flip-left" data-aos-duration="1000">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 ">
                 <img
                   alt="Aldi taheran"
                   src="/src/aldi taher.jpeg"
@@ -316,7 +364,7 @@
                 <img
                   alt="Man"
                   src="/src/jess.jpg"
-                  class="h-16 w-16 rounded-full object-cover"
+                  class="h-16 w-16 rounded-full object-cover hover:-rotate-12 duration-1000"
                 />
       
                 <div>
@@ -463,7 +511,7 @@
     
                 <h2 class="mt-2 text-4xl font-bold text-white">Contacts</h2>
     
-                <p class="mt-3 text-gray-400">Kami siap melayani panggilan Anda.</p>
+                <p class="mt-3 text-gray-300">Kami siap melayani panggilan Anda.</p>
             </div>
     
             <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">

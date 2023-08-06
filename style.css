@@ -1,10 +1,6 @@
 html, body{
     overflow-x: hidden;
 }
-head .utama{
-    background: url("laptop.jpg");
-    width: 100vw;
-}
 
 /* navbar baru */   
 .header{
@@ -18,7 +14,7 @@ head .utama{
     align-items: center;
     justify-content: space-between;
     backdrop-filter: blur(10px);
-    border-bottom: 2px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255,255,255,.2);
     z-index:100;
 }
 .header::before{
@@ -28,7 +24,7 @@ head .utama{
     top: 0;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent); */
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.4), transparent);
     transition: .5s;
 }
 .header:hover::before{
@@ -42,7 +38,7 @@ head .utama{
     cursor: default;
 }
 .navbar a{
-    color: #fff;
+    /* color: rgb(75 85 99); */
     font-size: 18px;
     text-decoration: none;
     margin-left: 35px;
@@ -70,6 +66,9 @@ head .utama{
     }
 }
 @media (max-width:768px){
+    .shop-now{
+        display: none;
+    }
     #menu-icon{
         display: block;
     }
@@ -105,6 +104,7 @@ head .utama{
         /* backdrop-filter: blur(10px); */
         z-index: 99;
         display: none;
+        transition: all 1.5s;
     }
     .nav-bg.active{
         display: block;
@@ -112,8 +112,8 @@ head .utama{
         background-color: rgba(255, 255, 255, 0);
         backdrop-filter: blur(24px);
         opacity: .5;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-        height: 330px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        height: 300px;
     }
     .img-logo{
         position: inherit;
