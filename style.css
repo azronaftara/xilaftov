@@ -2,6 +2,12 @@ html, body{
     overflow-x: hidden;
 }
 
+blockquote{
+    position: inherit;
+    z-index: 4;
+}
+
+
 /* navbar baru */   
 .header{
     position: fixed;
@@ -66,6 +72,9 @@ html, body{
     }
 }
 @media (max-width:768px){
+    .whatsapp-button{
+        width: 3em;
+    }
     .hero-section{
         padding-top: 120px;
     }
