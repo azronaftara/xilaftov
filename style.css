@@ -7,6 +7,10 @@ blockquote{
     z-index: 4;
 }
 
+.harga-barang{
+    font-size: 24px;
+}
+
 
 /* navbar baru */   
 .header{
