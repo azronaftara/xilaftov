@@ -135,7 +135,7 @@ blockquote{
         backdrop-filter: blur(24px);
         opacity: .5;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        height: 300px;
+        height: 200px;
     }
     .img-logo{
         position: inherit;
